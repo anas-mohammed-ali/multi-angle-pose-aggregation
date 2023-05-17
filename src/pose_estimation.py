@@ -148,3 +148,4 @@ class PoseEstimator:
             "right_elbow": right_elbow_angle,
             "left_elbow": left_elbow_angle
         }
+# Enhanced pose estimation

@@ -109,3 +109,4 @@ class AppConfig:
             print(f"Error saving config: {e}")
             return False
 # Enhanced configuration
+# Enhanced configuration

@@ -108,3 +108,4 @@ class AppConfig:
         except Exception as e:
             print(f"Error saving config: {e}")
             return False
+# Enhanced configuration

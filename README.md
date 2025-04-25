@@ -36,3 +36,80 @@ multi-angle-pose-aggregation/
 │
 ├── requirements.txt
 └── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+Make sure you have Python 3.8+ installed. Then:
+
+```bash
+git clone https://github.com/anas-mohammed-ali/multi-angle-pose-aggregation.git
+cd multi-angle-pose-aggregation
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ How to Use
+
+### 🟢 1. Capture 2D Keypoints from Webcam
+
+```bash
+python src/main.py
+```
+
+- Press `Q` to stop recording  
+- JSON will be saved inside:  
+  `assets/keypoints/pose_data_<timestamp>.json`
+
+---
+
+### 🔁 2. Simulate Second View
+
+```bash
+python utils/simulate_second_view.py
+```
+
+- Edit the script to insert your actual filename and frame width
+
+---
+
+### 📐 3. Triangulate 3D Poses
+
+```bash
+python utils/triangulate_3d_pose.py
+```
+
+- Set your original and flipped filenames in the script
+
+---
+
+### 🧱 4. Visualize 3D Skeleton
+
+```bash
+python utils/visualize_3d_pose.py
+```
+
+- Visualizes the first frame (or you can modify to loop through all)
+
+---
+
+## 📸 Demo
+
+*Coming soon: GIF of 2D overlay + 3D Open3D visualizer side-by-side.*
+
+---
+
+## 📄 License
+
+This project is under the MIT License — use it, modify it, build on it!
+
+---
+
+## 💼 Author
+
+**Anas Mohammed Ali**  
+M.Sc. Embedded Systems — Saarland University  
+[LinkedIn](https://www.linkedin.com/in/anas-mohammed-ali) · [GitHub](https://github.com/anas-mohammed-ali)
